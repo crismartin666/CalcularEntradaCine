@@ -1,0 +1,106 @@
+/*   
+	version:  1.0
+	author:   Cristina Martin Pumar
+	date: 	  20150618
+		
+*/
+
+/* 
+   RESET    
+   Resetear todos los estilos para cualquier navegador
+*/
+
+@import url("reset.css");
+
+/***************************** 
+      ClearFix
+*******************************/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/***************************** 
+   ETIQUETAS 
+   dar un estilo general o base a toda la Web	
+*******************************/
+body {
+	font-family: arial;
+}
+
+section {
+	width: 300px;
+	height: 400px;
+	margin-top: 20px;
+  	border: 1px solid #000;
+  	background-image: url('../img/entrada_cine.jpg');
+  	
+} 
+/***********************
+          HEAD 
+*************************/
+
+#head h1 {
+	background-color: rgb(0, 153, 204) !important;
+	color: rgb(255,255,255) !important;
+	font-size: 1.2em;
+	padding: 6px 0;
+	padding-left: 5px;
+	text-align: left;
+	display: block;
+	margin-top: 10px;
+}
+
+/* 
+	ESTILOS REUTILIZABLES
+*/
+
+/*
+	PAGINAS
+*/
+
+/* Regla con selector por ID */
+
+#container {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#content h1 {
+	background-color: #FFFFFF;
+	color: rgb(0, 153, 204);
+	font-size: 30px;
+	padding: 5px 0;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#lbListaDias{
+	margin-left: 20px;
+}
+
+#lbPrecio {
+	font-size: 20px;
+}
+
+#precio {
+	font-size: 100px;
+	margin-left: 10px;
+}
+
+#resultado{
+	color: #FFF;
+	margin-left: 20px;
+	margin-top: 200px;
+}
+
+

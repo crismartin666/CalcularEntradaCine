@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+	<base href="/CalcularEntradaCine/">
+	
+	
+	<meta charset="utf-8">
+	
+	<title>Calcular Entrada Cine</title>
+	<meta name="description" content="Calcula el precio de la entrada de cine">
+	<meta name="author"      content="Cristina Martin Pumar">
+	
+	<link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">	
+	
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  
+</head>
+
+<body>
+
+<div id="container">
+
+	<header id="head">	
+		<h1>Calcular Entrada Cine</h1>		
+	</header>
+
+	<section>
+
+		<div id="content">
+		
+			<h1>!Calcula tu entrada!</h1>
+			
+			<form action="#" method="post" onsubmit="return false;">
+
+				<label id="lbListaDias" for="listaDias">Dia:</label>
+				<select id="listaDias" name="listaDias" size="1" onchange="calcularEntrada();" >
+					<option value='1'>lunes</option>
+					<option value='2'>martes</option>
+					<option value='3'>miercoles</option>
+					<option value='4' selected>jueves</option>
+					<option value='5'>viernes</option>
+					<option value='6'>sabado</option>
+					<option value='7'>domingo</option>
+	       		</select>
+				
+				<label for="edad">Edad:</label>
+				<input type="text" 
+				       id="edad" name="edad"
+				       value="16" 
+				       onkeypress="return justNumbers(event);"
+				       onchange="calcularEntrada();" 
+					   placeholder="0-99"
+					   required 
+					   size="2"
+					   maxlength="2">
+			</form>
+		
+		</div> <!-- <div id="content"> -->
+		
+		<div id="resultado">
+			<label id="lbPrecio" for="precio">PRECIO</label>
+			<span  id="precio">2€</span>
+		</div>
+	
+	</section>
+
+	<footer>	
+	</footer>
+
+</div> <!-- <div id="container"> -->
+ 
+<!--  Custom JavaScript despues de cargar todas las librerias  -->
+<script src="js/cine.js"></script>
+ 
+</body>
+</html>
